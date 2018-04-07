@@ -73,3 +73,7 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+*.target
+*.bin
+*.modules
+DownLoadImageAndUse/Intermediate/

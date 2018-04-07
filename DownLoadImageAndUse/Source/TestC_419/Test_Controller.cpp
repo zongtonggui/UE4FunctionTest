@@ -9,6 +9,18 @@
 #include "BulkData.h"
 #include "Engine/Texture2D.h"
 
+
+void ATest_Controller::Upload(const FString & URL, const FString & ContentString)
+{
+	TSharedRef<IHttpRequest> HttpReuest = FHttpModule::Get().CreateRequest();
+	HttpReuest->SetURL(URL);
+	HttpReuest->SetVerb(TEXT("POST"));
+	HttpReuest->SetHeader(TEXT("Content-Type"), TEXT("application/x-www-form-urlencoded"));
+	HttpReuest->SetContentAsString(ContentString);//也可以用SetContent，只不过参数要换成TArray  
+	HttpReuest->OnProcessRequestComplete().BindUObject(this, &ATest_Controller::OnRequestComplete);
+	HttpReuest->OnRequestProgress().BindUObject(this, &ATest_Controller::OnRequestProgress);
+	HttpReuest->ProcessRequest();
+}
 void ATest_Controller::DownLoad(const FString & URL)
 {
 	TSharedRef<IHttpRequest> HttpReuest = FHttpModule::Get().CreateRequest();
@@ -39,6 +51,8 @@ void ATest_Controller::OnRequestProgress(FHttpRequestPtr HttpRequest, int32 Byte
 {
 	
 }
+
+
 
 //从本地加载图片，然后转换成Texture2D
 UTexture2D * ATest_Controller::GetTexture2DFromDiskFile(const FString & FilePath, UTexture2D * MyTexture)
