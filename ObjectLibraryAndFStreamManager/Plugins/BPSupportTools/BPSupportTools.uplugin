@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BPSupportTools",
+	"Description": "Use to extended BP system",
+	"Category": "Other",
+	"CreatedBy": "ZongTonggui",
+	"CreatedByURL": "https://github.com/zongtonggui",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BPSupportTools",
+			"Type": "Developer",
+			"LoadingPhase": "Default"
+		}
+	]
+}
