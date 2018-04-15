@@ -51,10 +51,9 @@ public:
 		//用以保存加载的资源对象，否则就会在异步加载后被销毁
 		UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UTexture2D* myobject;
-		
+
 
 		TSharedPtr<FStreamableHandle>  streamhandle;
-		virtual void PlayerTick(float DeltaTime)override;
 
 
 };
