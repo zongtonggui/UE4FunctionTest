@@ -5,7 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "Engine/ObjectLibrary.h"
+#include "Engine/StreamableManager.h"
 #include "AssetPlayerController.generated.h"
+
 
 
 /**
@@ -44,12 +46,15 @@ public:
 		//通过streaableManager卸载资产
 		void UnLoadAsset();
 
-		//通过清除引用卸载资产
-		void ClearReference();
 		static UObjectLibrary * ObjectLibrary;
 
 		//用以保存加载的资源对象，否则就会在异步加载后被销毁
 		UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		TArray<UObject*> myobject;
+		UTexture2D* myobject;
+		
+
+		TSharedPtr<FStreamableHandle>  streamhandle;
+		virtual void PlayerTick(float DeltaTime)override;
+
 
 };

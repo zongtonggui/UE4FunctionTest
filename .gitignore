@@ -78,3 +78,4 @@ DerivedDataCache/*
 *.modules
 DownLoadImageAndUse/Intermediate/
 ObjectLibraryAndFStreamManager/Plugins/BPSupportTools/Intermediate/
+ObjectLibrary&StreamManager/Plugins/BPSupportTools/Intermediate/
