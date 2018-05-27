@@ -62,7 +62,7 @@ public:UFUNCTION(BlueprintCallable, Category = "Example", CustomThunk, meta = (C
 			else if (NumericProperty->IsInteger())
 			{
 				IntValue = NumericProperty->GetSignedIntPropertyValue(ValuePtr);
-
+			
 				UE_LOG(LogTemp, Warning, TEXT("PropertyName:%s"), *NumericProperty->GetName());
 				UE_LOG(LogTemp, Warning, TEXT("PropertyValue:%d"), IntValue);
 			}
