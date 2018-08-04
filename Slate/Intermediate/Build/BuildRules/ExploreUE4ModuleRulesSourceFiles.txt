@@ -1,0 +1,6 @@
+D:\UESoureTree\Slate\Source\ExploreUE4\ExploreUE4.Build.cs
+D:\UESoureTree\Slate\Plugins\MyBlank\Source\MyBlank\MyBlank.Build.cs
+D:\UESoureTree\Slate\Plugins\StandaloneWindow\Source\StandaloneWindow\StandaloneWindow.Build.cs
+D:\UESoureTree\Slate\Plugins\UMGExtern\Source\UMGExtern\UMGExtern.Build.cs
+D:\UESoureTree\Slate\Source\ExploreUE4.Target.cs
+D:\UESoureTree\Slate\Source\ExploreUE4Editor.Target.cs
