@@ -79,3 +79,7 @@ DerivedDataCache/*
 DownLoadImageAndUse/Intermediate/
 ObjectLibraryAndFStreamManager/Plugins/BPSupportTools/Intermediate/
 ObjectLibrary&StreamManager/Plugins/BPSupportTools/Intermediate/
+Slate/Intermediate/
+Slate/Plugins/MyBlank/Intermediate/
+Slate/Plugins/StandaloneWindow/Intermediate/
+Slate/Plugins/UMGExtern/Intermediate/
