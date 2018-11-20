@@ -16,7 +16,7 @@ class FSlateTutorialsGameModule : public FDefaultGameModuleImpl
 	{
 		//Hot reload hack
 		FSlateStyleRegistry::UnRegisterSlateStyle(FMenuStyles::GetStyleSetName());
-		FMenuStyles::Initialize();
+		//FMenuStyles::Initialize();
 	}
 
 	// Called whenever the module is shutting down. Here, we simply tell our MenuStyles to shut down.
